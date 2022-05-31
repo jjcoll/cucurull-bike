@@ -265,8 +265,8 @@
   grid-row: 2;
 }
 
-.g--5 {
-}
+/* .g--5 {
+} */
 
 /* ******************* */
 /*      TESTMONIALS    */
@@ -317,12 +317,13 @@
 }
 
 .card__i--1 {
-  background-image: url("../assets/img/boda1.jpg");
+  background-image: url("../assets/img/testimonios/boda1.jpg");
 }
 
 .card__i--2 {
-  background-image: url("../assets/img/boda2.jpg");
+  background-image: url("../assets/img/testimonios/boda3.jpg");
 }
+
 /* ******************* */
 /*         CTA         */
 /* ******************* */
