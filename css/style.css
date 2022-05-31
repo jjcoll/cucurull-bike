@@ -126,18 +126,17 @@
   animation: shake-icon 6s infinite;
 }
 
-.hero__i__box {
+/* .hero__i__box {
   /* height: 70vh; */
   /* height: 56rem; */
-  /* width: 100%; */
+  /* width: 100%; 
   border-radius: 9px;
-
-  box-shadow: -2rem 2rem white;
-}
+} */
 
 .hero__i {
   border-radius: 9px;
-  width: 100%;
+  width: 90%;
+  box-shadow: -2rem 2rem white;
   /* height: 100%; */
 }
 
@@ -318,7 +317,7 @@
 }
 
 .card__i--1 {
-  background-image: url("../assets/img/boda1.jpeg");
+  background-image: url("../assets/img/boda1.jpg");
 }
 
 .card__i--2 {
