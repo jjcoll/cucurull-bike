@@ -110,6 +110,8 @@ b {
   /* text-shadow: -10px 2px #b99332; */
   margin-bottom: 6.4rem;
   line-height: 0.85;
+
+  text-align: center;
 }
 
 .hp2 {
@@ -165,4 +167,9 @@ b {
 
 .__hidden {
   opacity: 0;
+}
+
+.__show {
+  opacity: 1 !important;
+  /* display: block !important; */
 }

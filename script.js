@@ -26,6 +26,31 @@
 //   element.classList.add("hero-img--active");
 // });
 
+////////////////////////////////////////
+// Mobile nav
+const burger = document.querySelector(".icon__menu")
+const nav = document.querySelector(".nav")
+const navLinks = document.querySelector(".nav__links")
+burger.addEventListener('click', () => {
+  console.log(burger.children)
+  nav.classList.toggle("__show")
+  navLinks.classList.toggle("nav__links-active")
+});
+
+const navLinksList = document.querySelectorAll(".nav__link")
+navLinksList.forEach(el => {
+  el.addEventListener('click', () => {
+
+    nav.classList.toggle("__show")
+    navLinks.classList.toggle("nav__links-active")
+  })
+})
+
+
+
+
+
+
 // all animations
 
 const options = {
@@ -120,41 +145,41 @@ const observerCTA = new IntersectionObserver((entries) => {
 observerCTA.observe(document.querySelector(".cta"));
 
 // Remove observer when smooth scrolling
-const navLinks = document.querySelectorAll(".nav__link");
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    document.querySelector(".desc__i__box").classList.add("show");
-    document.querySelector(".desc__t__box").classList.add("show");
+// const navLinks = document.querySelectorAll(".nav__link");
+// navLinks.forEach((link) => {
+//   link.addEventListener("click", () => {
+//     document.querySelector(".desc__i__box").classList.add("show");
+//     document.querySelector(".desc__t__box").classList.add("show");
 
-    document.querySelector(".gall__h").classList.add("show");
-    document.querySelector(".gall__t__box--1").classList.add("show");
-    document.querySelector(".g--1").classList.add("show");
-    document.querySelector(".g--2").classList.add("show");
-    document.querySelector(".gall__t__box--2").classList.add("show");
-    document.querySelector(".g--3").classList.add("show");
-    document.querySelector(".g--4").classList.add("show");
-    document.querySelector(".gall__t__box--3").classList.add("show");
-    document.querySelector(".g--5").classList.add("show");
-    document.querySelector(".g--6").classList.add("show");
+//     document.querySelector(".gall__h").classList.add("show");
+//     document.querySelector(".gall__t__box--1").classList.add("show");
+//     document.querySelector(".g--1").classList.add("show");
+//     document.querySelector(".g--2").classList.add("show");
+//     document.querySelector(".gall__t__box--2").classList.add("show");
+//     document.querySelector(".g--3").classList.add("show");
+//     document.querySelector(".g--4").classList.add("show");
+//     document.querySelector(".gall__t__box--3").classList.add("show");
+//     document.querySelector(".g--5").classList.add("show");
+//     document.querySelector(".g--6").classList.add("show");
 
-    document.querySelector(".test__h").classList.add("show");
-    document.querySelector(".test__card-1").classList.add("show");
+//     document.querySelector(".test__h").classList.add("show");
+//     document.querySelector(".test__card-1").classList.add("show");
 
-    document.querySelector(".test__card-2").classList.add("show");
+//     document.querySelector(".test__card-2").classList.add("show");
 
-    document.querySelector(".cta-text").classList.add("show");
-    document.querySelector(".cta-button").classList.add("show");
+//     document.querySelector(".cta-text").classList.add("show");
+//     document.querySelector(".cta-button").classList.add("show");
 
-    console.log("navigating");
-    observerDesc.disconnect();
-    observerGall_1.disconnect();
-    observerGall_2.disconnect();
-    observerGall_3.disconnect();
-    observerTest1.disconnect();
-    observerTest2.disconnect();
-    observerCTA.disconnect();
-  });
-});
+//     console.log("navigating");
+//     observerDesc.disconnect();
+//     observerGall_1.disconnect();
+//     observerGall_2.disconnect();
+//     observerGall_3.disconnect();
+//     observerTest1.disconnect();
+//     observerTest2.disconnect();
+//     observerCTA.disconnect();
+//   });
+// });
 
 // Show form
 const ctaBtnEl = document.querySelector(".cta-button");
@@ -172,6 +197,10 @@ closeFormEl.addEventListener("click", () => {
   document.querySelector(".header").classList.remove("blur");
   document.querySelector(".main").classList.remove("blur");
 });
+
+
+
+
 
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
