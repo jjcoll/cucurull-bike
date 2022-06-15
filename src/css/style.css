@@ -45,6 +45,7 @@
   display: flex;
   gap: 2.4rem;
   list-style: none;
+  z-index: 1000;
 }
 
 .nav__link:link,
