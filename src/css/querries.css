@@ -197,9 +197,10 @@
     height: 100%;
     text-align: center;
     width: 50%;
-    z-index: 1;
+    z-index: 10000;
     transition: transform 0.3s;
-
+    --webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   .logo__text {
@@ -207,7 +208,9 @@
   }
 
   .nav__links-active {
-    transform: translateX(0);
+    transform: translateX(0); 
+    --webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   .icon__menu {
