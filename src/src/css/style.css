@@ -1,0 +1,563 @@
+/* ******************* */
+/* HEADER -- NAV       */
+/* ******************* */
+
+.header {
+  height: 10vh;
+  padding: 0 6.4rem;
+  background-color: var(--main-color);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container:hover {
+  cursor: pointer;
+}
+
+.logo__spinner {
+  position: absolute;
+  top: 0.6rem;
+  left: 1rem;
+  margin-top: 1.3rem;
+  height: 3.5rem;
+}
+
+.logo__i__b {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* .logo-container:hover div .logo__spinner {
+  height: 7rem;
+  transform: rotate(30deg);
+   animation: fadeInRight 1s both;
+
+} */
+
+.logo__img {
+  height: 6rem;
+}
+
+.nav__links {
+  display: flex;
+  gap: 2.4rem;
+  list-style: none;
+  z-index: 1000;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  font-size: 2.4rem;
+  font-family: "Aeonik Medium";
+  font-weight: 600;
+  color: var(--nav-color);
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav__link:hover,
+.nav__link:active {
+  color: var(--nav-light);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav__link--cta:link,
+.nav__link--cta:visited {
+  color: var(--logo-color);
+}
+
+.nav__link--cta:hover,
+.nav__link--cta:active {
+  color: var(--logo-light);
+}
+
+/* ******************* */
+/*       HERO          */
+/* ******************* */
+
+.hero {
+  padding-top: 9.6rem;
+  /* height: 90vh; */
+  background-color: var(--main-color);
+}
+
+.hero__container {
+  max-width: 130rem;
+  margin: 0 auto;
+  /* gap: 8rem; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.hero__t__box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* gap: 2.4rem; */
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.icon__down {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+.icon__down:hover {
+  cursor: pointer;
+  color: var(--nav-light);
+  transition: all 0.3s;
+}
+
+.icon__desc {
+  font-family: "caveat";
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.icon__desc {
+  animation: shake-text 6s infinite;
+}
+
+.icon__down {
+  animation: shake-icon 6s infinite;
+}
+
+/* .hero__i__box {
+  /* height: 70vh; */
+  /* height: 56rem; */
+  /* width: 100%; 
+  border-radius: 9px;
+} */
+
+.hero__i {
+  border-radius: 9px;
+  width: 100%;
+  box-shadow: -2rem 2rem white;
+  /* height: 100%; */
+}
+
+/* ******************* */
+/*     Description     */
+/* ******************* */
+
+.description {
+  padding: 9.6em 4.8rem;
+}
+
+.desc__container {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+}
+
+.desc__i__box {
+  opacity: 0;
+  z-index: -1;
+}
+
+.desc__img {
+  /* height: 49vh; */
+  width: 100%;
+  border-radius: 9px;
+}
+
+.desc__t__box {
+  opacity: 0;
+  background-color: #e7f5ff;
+  padding: 3.2rem 6.4rem;
+  margin-left: -15rem;
+  border-radius: 9px;
+}
+
+.desc__txt {
+  font-family: "Aeonik Regular";
+  font-size: 2rem;
+  color: #31414c;
+  line-height: 1.3;
+}
+
+.desc__t__box h2 {
+  font-size: 4.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.ice-cream {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%) rotate(45deg);
+  height: 100rem;
+  width: 100rem;
+}
+
+/* ******************* */
+/*     Gallery         */
+/* ******************* */
+
+.gallery {
+  padding: 9.6rem 0;
+}
+
+.gall__container {
+  margin-top: 6.4rem;
+  display: grid;
+  gap: 4.8rem;
+  row-gap: 6.4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.gall__t__box {
+  padding: 2.4rem 4.8rem;
+  opacity: 0;
+}
+
+.gall__t__box--r {
+  grid-column: 1 / 3;
+}
+
+.gall__t__box--l {
+  grid-column: 3 / -1;
+}
+
+.gall__i__box {
+  width: 100%;
+  height: 30rem;
+  overflow: hidden;
+  border-radius: 9px;
+  opacity: 0;
+}
+
+.gall__i__box img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  object-fit: cover;
+}
+
+.gall__i:hover {
+  transform: scale(1.2);
+}
+
+/* .gall__i--scaled {
+  transform: scale(1.3);
+}
+
+.gall__i--scaled:hover {
+  transform: scale(1.5);
+} */
+
+.gall__t {
+  font-family: "Aeonik Regular";
+  font-size: 2rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.g--3 {
+  grid-row: 2;
+}
+
+.g--4 {
+  grid-row: 2;
+}
+
+/* .g--5 {
+} */
+
+/* ******************* */
+/*      TESTMONIALS    */
+/* ******************* */
+
+/* TESTIMONIALS */
+.test__container {
+  padding: 9.6rem 0;
+}
+
+.test__card {
+  margin-top: 6.4rem;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  border-radius: 9px;
+  overflow: hidden;
+  border-left: 10px solid #e7f5ff;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+.card__t__box {
+  padding: 4.8rem;
+}
+
+.card__heading {
+  margin-bottom: 3rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.card__t {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-style: italic;
+}
+
+.card__credit {
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: normal;
+  text-align: right;
+}
+
+.card__i__box {
+  /* background-image: url("../img/boda1.jpeg"); */
+  background-position: center;
+  background-size: cover;
+}
+
+.card__i--1 {
+  background-image: url("../assets/img/testimonios/boda1.jpg");
+}
+
+.card__i--2 {
+  background-image: url("../assets/img/testimonios/boda3.jpg");
+}
+
+/* ******************* */
+/*         CTA         */
+/* ******************* */
+
+.cta {
+  padding: 12.8rem 5.4rem;
+}
+
+.cta-container {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.cta-button {
+  background-color: #e7f5ff;
+  height: 20rem;
+  width: 40rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s;
+  justify-self: flex-end;
+}
+
+.cta-button p {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #31414c;
+}
+
+.cta-button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 10px #e7f5ff;
+}
+
+/* ******************* */
+/*       FOOTER        */
+/* ******************* */
+
+.footer {
+  border-top: 1px solid #eee;
+}
+
+.foot__container {
+  padding: 9.6rem 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.media__box {
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: 3.6rem;
+  justify-content: center;
+}
+
+.media__anchor:link,
+.media__anchor:visited,
+.media__anchor:active,
+.media-icon:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.media-icon {
+  font-size: 3rem;
+}
+
+.media-icon:hover {
+  transform: translateY(-0.3rem);
+  cursor: pointer;
+}
+
+.foot__heading {
+  margin-bottom: 1.2rem;
+}
+
+.foot__t {
+  margin-bottom: 0.8rem;
+}
+
+/* ******************* */
+/*       FORM          */
+/* ******************* */
+
+form {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  /* transform: translateX(100%); */
+  transition: opacity 0.3s;
+}
+
+.form__active {
+  z-index: 1000;
+  opacity: 1;
+
+  position: fixed;
+  top: 10vh;
+  right: 50%;
+  transform: translateX(50%);
+  height: 80vh;
+  margin: 0 auto;
+  border-radius: 20px;
+  width: 85%;
+  background-color: var(--form-color);
+
+  padding: 9.6rem 0 9.6rem 9.6rem;
+  pointer-events: all;
+  border-right: var(--main-color) 9.6rem solid;
+}
+
+.form__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.form__icon--close {
+  position: absolute;
+  top: 2.4rem;
+  right: 2.4rem;
+  font-size: 6.2rem;
+}
+
+.form__icon--close:hover {
+  cursor: pointer;
+}
+
+.form__name,
+.form__email,
+.form__where {
+  display: flex;
+  max-width: 120rem;
+  /* width: 80%; */
+  gap: 3.2rem;
+  margin-bottom: 3.2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form__t,
+label {
+  font-size: 3rem;
+}
+
+input,
+select {
+  padding: 2.4rem 0.8rem;
+  border-radius: 9px;
+  border: none;
+  background-color: #d2ecff;
+  font-family: "Aeonik Medium";
+  font-size: 2rem;
+  color: #31414c;
+
+  width: 50%;
+}
+
+input::placeholder {
+  /* font-size: 2rem; */
+  color: #7397b3;
+}
+
+select:invalid {
+  color: #7397b3;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem #e7f5ff;
+}
+
+.form__bot {
+  margin-top: 9.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.form__btn {
+  padding: 2.4rem 4.8rem;
+  border-radius: 9px;
+  border: none;
+  background-color: #fff;
+  width: 30%;
+  font-family: "Aeonik Medium";
+  font-size: 2rem;
+  color: #31414c;
+
+  transition: all 0.3s;
+}
+
+.form__btn:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+  box-shadow: inset 0 0 0 0.8rem #fff;
+}
+
+.form__t__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form__icon {
+  margin-left: 2.4rem;
+  margin-right: 0.8rem;
+  font-size: 3rem;
+}
+/**************/
+/* MOBILE NAV */
+/**************/
+
+.icon__menu {
+  display: none;
+  border: none;
+  background-color: transparent;
+  font-size: 4.8rem;
+  color: #31414c;
+}
+
